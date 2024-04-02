@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width:768px) {
+            .swiper {
+                display: none;
+            }
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="pt-[16px] md:pt-[64px] pb-[16px] md:pb-4">
+        <div class="max-w-[1288px] flex justify-between items-center px-5 mx-auto">
+            <a href="">
+                <img class="flex" src="../img/Logo.svg" alt="Header logo">
+            </a>
+            <div class="flex gap-4 items-center">
+                <button class="ml-auto flex md:hidden"><img class="flex" src="../img/shopping.svg"
+                        alt="shopping_button"></button>
+                <button class="flex md:hidden"><img class="flex" src="../img/hamburger menu.png"
+                        alt="hamburger_menu"></button>
+                <span
+                    class="font-normal flex md:hidden absolute bg-white  text-[7px] px-1 top-[17px]  right-[50px] border-2 border-black rounded-[100%]">1</span>
+            </div>
+            <ul class="hidden md:flex gap-[64px]">
+                <li class=""> <a class="text-base font-normal" href="">Shop</a></li>
+                <li class="text-base font-normal"> <a class="text-base font-normal" href="">Blog</a></li>
+                <li class="border-l-0 border-r-2 border-t-0 border-b-0 border-[#707070] text-base font-normal pr-12"><a
+                        class="text-base font-normal" href="">Our Story</a></li>
+                <button><img src="../img/search.svg" alt="search_button"></button>
+                <button><img src="../img/shopping.svg" alt="shopping_button"></button>
+                <button><img src="../img/profile.svg" alt="profile_button"></button>
+            </ul>
+        </div>
+    </header>
+    <section>
+
+        <div class="max-w-[1288px] flex justify-between items-center px-5 mx-auto pt-4 pb-16">
+            <div class="flex md:hidden">
+                <form action="">
+                    <input class="py-[10px] w-[288px] pl-8 border-2 rounded-[4px]" placeholder="Search" type="search">
+                    <button class="relative right-[280px]">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.24826 8.30362L11.9144 10.9735C12.0335 11.106 12.0276 11.3087 11.9011 11.4341L11.4345 11.9013C11.3719 11.9645 11.2868 12 11.1979 12C11.109 12 11.0238 11.9645 10.9613 11.9013L8.29511 9.2314C8.22136 9.1575 8.15444 9.07707 8.09514 8.99111L7.59524 8.32364C6.7681 8.98506 5.74095 9.34518 4.68245 9.34487C2.50127 9.35245 0.6059 7.84573 0.118463 5.71674C-0.368974 3.58774 0.681608 1.40466 2.64823 0.459942C4.61486 -0.484772 6.97267 0.0610084 8.32576 1.77417C9.67886 3.48732 9.66613 5.91064 8.29511 7.60945L8.96165 8.07C9.06574 8.13672 9.1619 8.21509 9.24826 8.30362ZM1.3498 4.67241C1.3498 6.51558 2.84191 8.00976 4.68251 8.00976C5.5664 8.00976 6.41409 7.65815 7.03909 7.03228C7.66409 6.4064 8.01522 5.55753 8.01522 4.67241C8.01522 2.82924 6.52311 1.33506 4.68251 1.33506C2.84191 1.33506 1.3498 2.82924 1.3498 4.67241Z"
+                                fill="#707070" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="object-cover " src="../img/slider imig.png" alt="">
+                        <h1 class="left-[30px] top-[226px] text-[43px] text-white absolute">Gold big hoops </h1>
+                        <span class="left-[30px] top-[285px] absolute text-[43px] text-white">$ 68,00</span>
+                        <button
+                            class="left-[30px] top-[400px] px-8 py-4 border-2 border-[#FFFFFF] rounded-[6px] text-white font-bold text-xl absolute">View
+                            Product</button>
+                    </div>
+                    <div class="swiper-slide"><img class="object-cover " src="../img/slider imig.png" alt="">
+                        <h1 class="left-[30px] top-[226px] text-[43px] text-white absolute">Gold big hoops </h1>
+                        <span class="left-[30px] top-[285px] absolute text-[43px] text-white">$ 68,00</span>
+                        <button
+                            class="left-[30px] top-[400px] px-8 py-4 border-2 border-[#FFFFFF] rounded-[6px] text-white font-bold text-xl absolute">View
+                            Product</button>
+                    </div>
+                    <div class="swiper-slide"><img class="object-cover " src="../img/slider imig.png" alt="">
+                        <h1 class="left-[30px] top-[226px] text-[43px] text-white absolute">Gold big hoops </h1>
+                        <span class="left-[30px] top-[285px] absolute text-[43px] text-white">$ 68,00</span>
+                        <button
+                            class="left-[30px] top-[400px] px-8 py-4 border-2 border-[#FFFFFF] rounded-[6px] text-white font-bold text-xl absolute">View
+                            Product</button>
+                    </div>
+                    <div class="swiper-slide"><img class="object-cover " src="../img/slider imig.png" alt="">
+                        <h1 class="left-[30px] top-[226px] text-[43px] text-white absolute">Gold big hoops </h1>
+                        <span class="left-[30px] top-[285px] absolute text-[43px] text-white">$ 68,00</span>
+                        <button
+                            class="left-[30px] top-[400px] px-8 py-4 border-2 border-[#FFFFFF] rounded-[6px] text-white font-bold text-xl absolute">View
+                            Product</button>
+                    </div>
+                    <div class="swiper-slide"><img class="object-cover " src="../img/slider imig.png" alt="">
+                        <h1 class="left-[30px] top-[226px] text-[43px] text-white absolute">Gold big hoops </h1>
+                        <span class="left-[30px] top-[285px] absolute text-[43px] text-white">$ 68,00</span>
+                        <button
+                            class="left-[30px] top-[400px] px-8 py-4 border-2 border-[#FFFFFF] rounded-[6px] text-white font-bold text-xl absolute">View
+                            Product</button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-60">
+        <div class="max-w-[1288px]  justify-between items-center px-5 mx-auto ">
+            <div class="flex items-center justify-between">
+                <h2 class="text-3xl mb-10 font-medium">Shop The Latest</h2>
+                <a class="text-xl text-[#A18A68] font-medium" href="#">View All</a>
+            </div>
+
+            <div class="gap-16 flex grid grid-cols-2 md:grid md:grid-cols-3">
+                <div class="">
+                    <div class="relative overflow-hidden group">
+                        <a href="#"
+                            class="absolute bottom-[-100px]  group-hover:bottom-[25px] bg-[#dbd8d897] px-[131px] py-[22px] text-black text-base font-bold">ADD
+                            TO CART</a>
+                        <img class="mb-6 w-full" src="../img/card-img-1.png" alt="Lira Earrings">
+                    </div>
+                    <h3 class="mb-4 text-xl font-normal">Lira Earrings</h3>
+                    <span class="text-xl font-medium text-[#A18A68]">$ 20,00</span>
+                </div>
+                <div class="">
+                    <div class="relative overflow-hidden group">
+                        <a href="#"
+                            class="absolute bottom-[-100px]  group-hover:bottom-[25px] bg-[#dbd8d897] px-[131px] py-[22px] text-black text-base font-bold">ADD
+                            TO CART</a>
+                        <img class="mb-6 w-full" src="../img/card-img-2.png" alt="Lira Earrings">
+                    </div>
+                    <h3 class="mb-4 text-xl font-normal">Hal Earrings</h3>
+                    <span class="text-xl font-medium text-[#A18A68]">$ 25,00</span>
+                </div>
+                <div class="">
+                    <div class="relative overflow-hidden group">
+                        <a href="#"
+                            class="absolute bottom-[-100px]  group-hover:bottom-[25px] bg-[#dbd8d897] px-[131px] py-[22px] text-black text-base font-bold">ADD
+                            TO CART</a>
+                        <img class="mb-6 w-full" src="../img/card-img-3.png" alt="Lira Earrings">
+                    </div>
+                    <h3 class="mb-4 text-xl font-normal">Kaede Hair Pin Set Of 3 </h3>
+                    <span class="text-xl font-medium text-[#A18A68]">$ 30,00</span>
+                </div>
+
+                <div class="">
+                    <div class="relative overflow-hidden group">
+                        <a href="#"
+                            class="absolute bottom-[-100px]  group-hover:bottom-[25px] bg-[#dbd8d897] px-[131px] py-[22px] text-black text-base font-bold">ADD
+                            TO CART</a>
+                        <img class="mb-6 w-full" src="../img/card-img-3.png" alt="Lira Earrings">
+                    </div>
+                    <h3 class="mb-4 text-xl font-normal">Hair Pin Set of 3</h3>
+                    <span class="text-xl font-medium text-[#A18A68]">$ 30,00</span>
+                </div>
+                <div class="">
+                    <div class="relative overflow-hidden group">
+                        <a href="#"
+                            class="absolute bottom-[-100px]  group-hover:bottom-[25px] bg-[#dbd8d897] px-[131px] py-[22px] text-black text-base font-bold">ADD
+                            TO CART</a>
+                        <img class="mb-6 w-full" src="../img/card-img-5.png" alt="Lira Earrings">
+                    </div>
+                    <h3 class="mb-4 text-xl font-normal">Plaine Necklace</h3>
+                    <span class="text-xl font-medium text-[#A18A68]">$ 20,00</span>
+                </div>
+                <div class="">
+                    <div class="relative overflow-hidden group">
+                        <a href="#"
+                            class="absolute bottom-[-100px]  group-hover:bottom-[25px] bg-[#dbd8d897] px-[131px] py-[22px] text-black text-base font-bold">ADD
+                            TO CART</a>
+                        <img class="mb-6 w-full" src="../img/card-img-6.png" alt="Lira Earrings">
+                    </div>
+                    <h3 class="mb-4 text-xl font-normal">Yuki Hair Pin Set of 3</h3>
+                    <span class="text-xl font-medium text-[#A18A68]">$ 29,00</span>
+                </div>
+
+            </div>
+
+    </section>
+    <section class="pb-2 md:pb-24">
+        <div class="max-w-[1288px]  justify-between items-center px-5 mx-auto ">
+            <hr class="border-[#D8D8D8] ">
+            <div class="md:hidden flex-row-reverse items-center mb-[57px]">
+                <form class="pt-[52px] ml-auto" action="">
+                    <input class="border-b-2 text-base font-normal pb-3 outline-none pr-36 border-black bg-inherit"
+                        placeholder="Give an email, get the newsletter." type="email">
+                    <button class="relative right-8"><img src="../img/btn.png" alt="footer-search-button"></button>
+                    <form class="flex" action="">
+                        <div class="flex pt-[11px]">
+
+                            <input class="flex md:hidden mr-1" type="checkbox">
+                            <p>I agree to the website’s terms and conditions</p>
+
+                        </div>
+                    </form>
+
+                </form>
+                <ul class="flex-col md:flex gap-10 pt-[52px]">
+                    <li class="text-[#707070] text-base font-normal">CONTACT</li>
+                    <li class="text-[#707070] text-base font-normal">TERMS OF SERVICES</li>
+                    <li class="text-[#707070] text-base font-normal">SHIPPING AND RETURNS</li>
+                </ul>
+            </div>
+            <div class="hidden md:flex items-center mb-[57px]">
+                <ul class="flex gap-10 pt-[52px]">
+                    <li class="text-[#707070] text-base font-normal">CONTACT</li>
+                    <li class="text-[#707070] text-base font-normal">TERMS OF SERVICES</li>
+                    <li class="text-[#707070] text-base font-normal">SHIPPING AND RETURNS</li>
+                </ul>
+                <form class="pt-[52px] ml-auto" action="">
+                    <input class="border-b-2 text-base font-normal pb-3 outline-none pr-36 border-black bg-inherit"
+                        placeholder="Give an email, get the newsletter." type="email">
+                    <button class="relative right-8"><img src="../img/btn.png" alt="footer-search-button"></button>
+                </form>
+            </div>
+            <div class="hidden md:flex items-center justify-between">
+                <p class="text-[#707070] text-base"><span class="text-black">© 2021 Shelly.</span> Terms of use <span
+                        class="text-black">and</span> privacy policy.</p>
+                <ul class="flex items-center gap-[30px]">
+                    <li><a href="#"><img src="../img/linkedin logo.png" alt=""></a> </li>
+                    <li><a href="#"><img src="../img/facebook logo.png" alt=""></a> </li>
+                    <li><a href="#"><img src="../img/instagram logo.png" alt=""></a> </li>
+                    <li><a href="#"><img src="../img/twitter logo.png" alt=""></a> </li>
+                </ul>
+            </div>
+            <div class="flex md:hidden mb-[38px]">
+                <ul class="flex items-center gap-4">
+                    <li class="text-black text-lg font-normal">Follow us _____</li>
+                    <li><a href="#"><img src="../img/linkedin logo.png" alt=""></a> </li>
+                    <li><a href="#"><img src="../img/facebook logo.png" alt=""></a> </li>
+                    <li><a href="#"><img src="../img/instagram logo.png" alt=""></a> </li>
+                    <li><a href="#"><img src="../img/twitter logo.png" alt=""></a> </li>
+
+                </ul>
+
+            </div>
+            <p class="flex md:hidden text-[#707070] text-base">© 2021 Shelly. Terms of use and privacy policy.</p>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
