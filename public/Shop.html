@@ -26,12 +26,15 @@
                     class="font-normal flex md:hidden absolute bg-white  text-[7px] px-1 top-[17px]  right-[50px] border-2 border-black rounded-[100%]">1</span>
             </div>
             <ul class="hidden md:flex gap-[64px]">
-                <li class=""> <a class="hover:border-b-2 border-black pb-[26px] text-base font-normal tab__btn active" href="#">Shop</a>
+                <li class=""> <a class="hover:border-b-2 border-black pb-[26px] text-base font-normal tab__btn active"
+                        href="#">Shop</a>
                 </li>
                 <li class="text-base font-normal"> <a
-                        class="text-base font-normal hover:border-b-2 border-black pb-[26px] tab__btn" href="#">Blog</a></li>
+                        class="text-base font-normal hover:border-b-2 border-black pb-[26px] tab__btn" href="#">Blog</a>
+                </li>
                 <li class=" text-base font-normal"><a
-                        class="hover:border-b-2 border-black pb-[26px] text-base font-normal tab__btn" href="#">Our Story</a></li>
+                        class="hover:border-b-2 border-black pb-[26px] text-base font-normal tab__btn" href="#">Our
+                        Story</a></li>
                 <button><img src="./img/search.svg" alt="search_button"></button>
                 <button><img src="./img/shopping.svg" alt="shopping_button"></button>
                 <button><img src="./img/profile.svg" alt="profile_button"></button>
@@ -75,11 +78,11 @@
 
                     <div
                         class="w-[102px] h-[53px] items-center justify-center gap-[24px] rounded-[4px]  flex bg-[#cdcccc]">
-                        <span class="text-[#707070] text-base font-normal">
+                        <span class="text-[#707070] cursor-pointer text-base font-normal minus">
                             -
                         </span>
-                        <p class="text-[#707070] text-base font-normal">1</p>
-                        <span class="text-[#707070] text-base font-normal">
+                        <p class="text-[#707070] text-base font-normal count">0</p>
+                        <span class="text-[#707070] text-base cursor-pointer font-normal plus">
                             +
                         </span>
                     </div>
@@ -105,20 +108,37 @@
     <section>
         <div class="max-w-[1288px] flex flex-col justify-between items-center px-5 mx-auto pb-6">
             <div class="w-[1248px]">
-                <ul class="flex pb-[34px] gap-[96px] border-b-2 relative ">
-                    <button
-                        class="hover:border-b-2 border-black pb-[39px] relative bottom-[-36px] tab__btn">Description</button>
-                    <button class="hover:border-b-2 border-black pb-[39px] relative bottom-[-36px] tab__btn">Aditional
-                        information</button>
-                    <button
-                        class="hover:border-b-2 border-black pb-[39px] relative bottom-[-36px] tab__btn">Reviews(0)</button>
+                <ul class="tabs">
+                    <li data-tab-target="#home" class="active tab">Description</li>
+                    <li data-tab-target="#pricing" class="tab">Aditional information</li>
+                    <li data-tab-target="#about" class="tab">Reviews(0)</li>
                 </ul>
+
+                <div class="tab-content">
+                    <div id="home" data-tab-content class="active">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat
+                            hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris
+                            eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio,
+                            in molestie diam bibendum sed.</p>
+                    </div>
+                    <div id="pricing" data-tab-content>
+                        <p>Weight: 0.3 kg
+                            Dimentions: 15 x 10 x 1 cm
+                            Colours: Black, Browns, White
+                            Material: Metal</p>
+                    </div>
+                    <div id="about" data-tab-content>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ea temporibus ullam laborum
+                            praesentium consectetur, quasi, fugit delectus necessitatibus eius blanditiis voluptates quo
+                            dolore labore deserunt culpa unde at? Tempora maiores natus dolorem dignissimos accusantium
+                            alias officia, in accusamus! Veniam, necessitatibus est quo et deserunt iure quaerat
+                            incidunt repellat impedit.</p>
+                    </div>
+                </div>
             </div>
-            <p class="pt-[39px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a
-                volutpat
-                hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu
-                facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam
-                bibendum sed.</p>
+
         </div>
     </section>
 

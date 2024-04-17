@@ -4,4 +4,34 @@
 
 .active {
     border-bottom: 2px solid black;
+    display: block;
+}
+
+[data-tab-content] {
+    display: none;
+    border: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    gap: 96px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding-bottom: 34px;
+}
+
+.tab-content {
+    padding-top: 39px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
