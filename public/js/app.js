@@ -30,9 +30,11 @@ plus.addEventListener('click', () =>{
 minus.addEventListener('click' , () =>{
     count.innerText = Number(count.innerText) - 1
 })
-if (count.innerText = 0) {
-    
-}
+minus.addEventListener('click' , () =>{
+    if (count.textContent < 1 ) {
+        count.textContent = 0
+    }
+})
 
 
 // let tabs = document.querySelectorAll('.tab__btn')
